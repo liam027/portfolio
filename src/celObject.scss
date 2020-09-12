@@ -1,0 +1,120 @@
+@import 'globals';
+
+.cel-object {
+    position: absolute;
+    display: flex;
+    align-content: center;
+    opacity: 0;
+    animation: cel-object-fade 8s 1s;
+}
+
+@keyframes cel-object-fade {
+    0% {opacity: 0;}
+    10% {opacity: 1;}
+    90% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+.cel-image {
+    width: 10px;
+    height: 10px;
+    padding: 5px;
+}
+
+.cel-target-container {
+    display: grid;
+    grid-template-rows: 2;
+    grid-template-columns: 2;
+    position: absolute;
+    transform: scale(1.3);
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    animation: target-fade 7s 2s, target-hover 4s 2s infinite alternate;
+}
+
+@keyframes target-fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    80% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes target-hover {
+    0% {transform: rotate(30deg) scale(1.3);}
+    50% {transform: rotate(65deg) scale(1.0);}
+    100% {transform: rotate(30deg) scale(1.3);}
+}
+
+.cel-name {
+    display: inline-block;
+    position: relative;
+    font-size: 0.60em;
+    align-self: center;
+    margin-left: 10px;
+    opacity: 0;
+    animation: name-fade 6s 2s;
+}
+
+@keyframes name-fade {
+    0% {opacity: 0;}
+    25% {opacity: 1;}
+    75% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+#cel-name-cursor {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -6px;
+    width: calc(100% + 6px);
+    background: $steel-grey;
+    box-sizing: border-box;
+    border-left: .70em solid;
+    animation: typing 2s 3s steps(7, end) forwards, blinking 1s step-end infinite, cursor-fade 2s 4s forwards;
+}
+
+@keyframes cursor-fade {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+  
+@keyframes typing {
+    0% {width: calc(100% + 6px);}
+    50% {width: 0%;}
+    100% {width: 0%;}
+}
+
+@keyframes blinking {
+    0% {border-color: transparent;}
+    50% { border-color: grey;}
+    100% {border-color: transparent;}
+}
+
+/* border corners for cel target container */
+.ct1 {
+    grid-row: 1;
+    grid-column: 1;
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+}
+.ct2 {
+    grid-row: 1;
+    grid-column: 3;
+    border-top: 1px solid gray;
+    border-right: 1px solid gray;
+}
+.ct3 {
+    grid-row: 3;
+    grid-column: 1;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+}
+.ct4 {
+    grid-row: 3;
+    grid-column: 3;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+}
+

@@ -1,0 +1,48 @@
+@import 'globals';
+
+#splash-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+}
+
+#splash {
+    width: 100vw;
+}
+
+#name {
+    font-size: 2em;
+    text-align: center;
+    color: $title;
+}
+
+#sub-name {
+    font-size: 1em;
+    text-align: center;
+    color: $title;
+
+}
+
+#logo-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#main-logo {
+    width: 15vh;
+    height: 15vh;
+}
+
+.splash-link{
+    display: block;
+    width: 200px;
+    margin: auto;
+    font-size: 1em;
+    line-height: 30px;
+    text-align: center;
+    color: $title;
+}
+
+
+

@@ -1,0 +1,47 @@
+@import 'globals';
+
+.section {
+    display: block;
+    margin: 0px 7%;
+}
+
+.section-title-frame {
+    font-size: 1.25em;
+    position: relative;
+}
+
+.section-title-trim-front {
+    display: inline-block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    transform: rotate(-60deg);
+    border-top: 2px solid $title;
+    top: 3px;
+    left: 6px;
+}
+
+.section-title-text {
+    color: $title;
+    border-top: 2px solid $title;
+    margin-left: 15px;
+}
+
+.section-content {
+    max-width: 1500px;
+    margin: 0px auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.section-content-text {
+    line-height: 30px;
+}
+
+#aboutme {
+    margin-top: 50px;
+}
+
+#projects {
+    margin-top: 25px;
+}

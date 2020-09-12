@@ -1,0 +1,32 @@
+@import 'globals.scss';
+
+.tree-line {
+    position: absolute;
+    z-index: -1;
+    width: 110%;
+    min-width: 3800px;
+}
+
+.trees {
+    display: relative;
+    transform: scale(1.2);
+}
+
+.block-gradient {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(black 0%,  $steel-grey 100%);
+    top: 250px;
+}
+
+#splash-tree-line {
+    top: 75%;
+}
+
+.footer-tree-line-container {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}

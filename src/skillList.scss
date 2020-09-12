@@ -1,0 +1,26 @@
+@import 'globals';
+
+#skill-grid {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+}
+
+.code-list, .program-list {
+    width: 5vw;
+    min-width: 150px;
+    margin: auto;
+}
+
+.code-list {
+    grid-column: 1;
+}
+
+.program-list {
+    grid-column: 2;
+}
+
+.skill-bullet {
+    line-height: 30px;
+}
