@@ -15,9 +15,10 @@ class SkillList extends React.Component {
           <li className="skill-bullet">Ruby on Rails</li>
           <li className="skill-bullet">C#</li>
           <li className="skill-bullet">Java</li>
-        </ul>          
+        </ul>
         <ul className="program-list">
-          <li className="skill-bullet">SQL</li>
+          <li className="skill-bullet">mySQL</li>
+          <li className="skill-bullet">Postgres</li>
           <li className="skill-bullet">Git</li>
           <li className="skill-bullet">Photoshop</li>
           <li className="skill-bullet">Unity</li>
