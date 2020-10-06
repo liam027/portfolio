@@ -14,7 +14,7 @@ class Splash extends React.Component {
               <img id="main-logo" src="logo.png" alt="A grey logo showing jagged lines, like mountains or a radio wave."/>
           </div>
           <div className="ref-container">
-              <InfoTip img="github.png" alt="github logo" content="Click to see my code on GitHub." link="https://github.com/liam027?tab=repositories" />
+              <InfoTip img="github.png" alt="github logo" content="Click to see my code on GitHub." link="https://github.com/liam027" />
           </div>
           <nav>
             <a href="#aboutme-scroll-target" className="splash-link title">ABOUT ME</a>

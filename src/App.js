@@ -175,7 +175,7 @@ class App extends React.Component {
               You can reach me by E-mail at <a href="mailto:liam027@gmail.com" subject="Hi Liam">liam027@gmail.com.</a>
             </span>
             <div className="ref-container">
-              <InfoTip img="github.png" alt="github logo" content="Click to see my code on GitHub." link="https://github.com/liam027?tab=repositories" />
+              <InfoTip img="github.png" alt="github logo" content="Click to see my code on GitHub." link="https://github.com/liam027" />
               <br />
               <br />
               <a id="return-to-top" href="#top">
