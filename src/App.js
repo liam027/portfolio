@@ -33,7 +33,7 @@ class App extends React.Component {
       <div id="aboutme-scroll-target"></div>
       <Section id="aboutme" title="ABOUT ME" content={
         <main className="section-content-text">
-          <article>I am a self-taught computer programmer residing in Burlington, Ontario, Canada. My background is in mechanical engineering and project management, and I previously worked on large-scale mining and nuclear power construction projects. I started out programming as a hobby, but I've forged it into a new career! When I'm not programming I love to get out biking, hiking and camping in the great outdoors. I'm currently available and looking for new opportunities. </article>
+          <article className="aboutme-text">I am a self-taught computer programmer residing in Burlington, Ontario, Canada. My background is in mechanical engineering and project management, and I previously worked on large-scale mining and nuclear power construction projects. I started out programming as a hobby, but I've forged it into a new career! When I'm not programming I love to get out biking, hiking and camping in the great outdoors. I'm currently available and looking for new opportunities. </article>
         </main>
       } />
 
